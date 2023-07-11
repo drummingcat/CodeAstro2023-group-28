@@ -1,10 +1,11 @@
 import os 
 import numpy as np
 import pandas as pd
-x = [1.0, 2.0, 4.4, 4.5, 8.8, 9.1, 8.7, 2.3, 2.4, 3.1, 5.9]
-s = pd.Series(x)
+x = ['Hello', 'Test', 'Huzzah']
+y = ['Huzzah', 'Test', 'Hello']
+s = pd.DataFrame(x,y)
 
-print(s  
+print(s) 
 """
 class skew(object):
   def __init__(self):
