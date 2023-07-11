@@ -1,11 +1,15 @@
 import os 
 import numpy as np
 import pandas as pd
-objects = ['Hello', 'Test', 'Huzzah'] #This will be our objects
-magnitude = ['Huzzah', 'Test', 'Hello'] #This will be our magnitudes
-surface_temp = ['temp', 'temp', 'temp'] #This will be our surface temps
+import matplotlib.pyplot as plt
+objects = ['Jupiter', 'Saturn', 'Venus', 'Mars', 'Mercury', 'Neptune', 'Uranus'] #This will be our objects
+magnitude = ['mag', 'mag', 'mag', 'mag', 'mag', 'mag', 'mag'] #This will be our magnitudes
+surface_temp = ['temp', 'temp', 'temp', 'temp', 'temp', 'temp', 'temp'] #This will be our surface temps
+Dist_from_earth = ['Dist', 'Dist', 'Dist', 'Dist', 'Dist','Dist', 'Dist']
+Dist_from_sun = ['Dist2', 'Dist2', 'Dist2', 'Dist2', 'Dist2','Dist2', 'Dist2']
 
-s = pd.DataFrame(objects,magnitude,surface_temp) #It will concatenate as long as it is in the dataframe
+
+s = pd.Series(objects,magnitude,surface_temp,Dist_from_earth,Dist_from_sun) #It will concatenate as long as it is in the dataframe
 
 print(s) 
 """
