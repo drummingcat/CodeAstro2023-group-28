@@ -1,14 +1,10 @@
 import os 
 import numpy as np
-import matplotlib.pylab as plt
-%matplotlib inline
-mat = np.random.random(100,100)
-def matrix_loop(mat, index):
-  index_start = mat.shape[0] #this is where the celestial objects and their stats will be appended
-  index_end = #same thing as before
-#outside of this function, there will be a timestep. This changes the right ascension and declination as the time increases
-#See below for the skew class
-  
+import pandas as pd
+x = [1.0, 2.0, 4.4, 4.5, 8.8, 9.1, 8.7, 2.3, 2.4, 3.1, 5.9]
+s = pd.Series(x)
+
+print(s  
 """
 class skew(object):
   def __init__(self):
