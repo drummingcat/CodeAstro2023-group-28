@@ -1,9 +1,11 @@
 import os 
 import numpy as np
 import pandas as pd
-x = ['Hello', 'Test', 'Huzzah']
-y = ['Huzzah', 'Test', 'Hello']
-s = pd.DataFrame(x,y)
+objects = ['Hello', 'Test', 'Huzzah'] #This will be our objects
+magnitude = ['Huzzah', 'Test', 'Hello'] #This will be our magnitudes
+surface_temp = ['temp', 'temp', 'temp'] #This will be our surface temps
+
+s = pd.DataFrame(objects,magnitude,surface_temp) #It will concatenate as long as it is in the dataframe
 
 print(s) 
 """
