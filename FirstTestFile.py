@@ -13,7 +13,8 @@ df = pd.DataFrame(objects, columns=["Objects", "Magnitude", 'Surface Temp','Dist
 ObjectOfChoice = str(input('What is your chosen object?'))
 for i in range (len(objects)):
     i += 1
-
     print(i)
-    Data = pd.Series(objects)
-    print(Data)
+    if ObjectOfChoice == 'Jupiter':
+        i = 1
+        Data = pd.Series(objects)
+        print(Data)
