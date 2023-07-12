@@ -12,14 +12,5 @@ objects = [['Object: Jupiter', 'Magnitude of -2.7', 'Surface temp of -234°F', '
 length = (len(objects))
 df = pd.DataFrame(objects, columns=["Objects", "Magnitude", 'Surface Temp','Distance from Earth', 'Distance from sun'])
 ObjectOfChoice = str(input('What is your chosen object?'))
-for i in range (length):
-    i += 1
-    print(i)
-if ObjectOfChoice == 'Jupiter':
-    i = 0
-    Data = pd.Series(objects[i])
-    print(Data)
-if ObjectOfChoice == 'Saturn':
-    i = 1
-    Data = pd.Series(objects[i])
-    print(Data)
+Search = pd.query("objects == @ObjectOfChoice")
+print(Search)
