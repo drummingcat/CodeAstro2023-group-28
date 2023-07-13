@@ -18,4 +18,3 @@ ObjectOfChoice = str(input('What is your chosen object?'))
 Search = df.query("Objects == @ObjectOfChoice")
 # Output
 print(Search)
-pd
