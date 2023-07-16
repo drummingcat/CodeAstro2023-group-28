@@ -1,2 +1,6 @@
 _build/*
 _build
+.vscode
+.vscode/*
+dist
+objectfinder.egg-info
